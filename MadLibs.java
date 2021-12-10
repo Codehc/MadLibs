@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MadLibs {
-    String madLib = "Testing test <noun> ree <adjective> urheurhwer <verb>.";
+    String madLib = "I woke up early in the morning and looked out the window. There was a <adjective> dog <verb (no -ing)>ing around the <noun>. It sure was going to be a crazy day!";
 
     Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
@@ -29,6 +29,6 @@ public class MadLibs {
             // Set the madlib to the part BEFORE the part of speech + (concat) the text the user has inputed + the text after the part of speech 
             madLib = before + scanner.nextLine() + after;
         }
-        System.out.println(madLib);
+        System.out.println("\nYour final story is....\n" + madLib);
     }
 }
